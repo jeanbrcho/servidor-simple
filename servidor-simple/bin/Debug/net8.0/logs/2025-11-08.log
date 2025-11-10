@@ -1,0 +1,43 @@
+[2025-11-08T19:25:51.4810595Z] 127.0.0.1 GET / Query:  Body: 
+
+[2025-11-08T19:25:52.1951322Z] 127.0.0.1 GET /favicon.ico Query:  Body: 
+
+[18:33:50] 127.0.0.1:63445 GET /index.html
+[18:33:52] 127.0.0.1:60545 GET /index.html
+[18:35:03] 127.0.0.1:53338 POST /index.html
+[18:35:45] 127.0.0.1:53338 POST /index.html -> data: Content-Type: text/plain
+User-Agent: PostmanRuntime/7.50.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: d1713d04-69ae-44f4-85d3-dc28ef9ded7f
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 27
+
+nombre=Jean&apellido=Bracho
+[18:36:14] 127.0.0.1:54980 POST /index.html
+[18:37:20] 127.0.0.1:54980 POST /index.html -> data: User-Agent: PostmanRuntime/7.50.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 142355cb-052c-46a1-8e07-b6e5c730db59
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 34
+
+nombre%3DJean%26apellido%3DBracho=
+[18:37:34] 127.0.0.1:61793 POST /index.html
+[18:37:44] 127.0.0.1:61793 POST /index.html -> data: Content-Type: text/plain
+User-Agent: PostmanRuntime/7.50.0
+Accept: */*
+Cache-Control: no-cache
+Postman-Token: 56e9d6ec-f74e-4e57-a8aa-f8be1bf18c2c
+Host: localhost:8080
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+Content-Length: 27
+
+nombre=Jean&apellido=Bracho
+[18:40:14] 127.0.0.1:54273 POST /index.html -> data: nombre=Jean&apellido=bracho

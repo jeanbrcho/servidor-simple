@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "CzU56kSf0qU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\servidor-simple.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.10\\microsoft.extensions.configuration.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\9.0.10\\microsoft.extensions.configuration.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\9.0.10\\microsoft.extensions.configuration.fileextensions.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.configuration.json\\9.0.10\\microsoft.extensions.configuration.json.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\9.0.10\\microsoft.extensions.fileproviders.abstractions.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\9.0.10\\microsoft.extensions.fileproviders.physical.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\9.0.10\\microsoft.extensions.filesystemglobbing.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\microsoft.extensions.primitives\\9.0.10\\microsoft.extensions.primitives.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\system.io.pipelines\\9.0.10\\system.io.pipelines.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\system.text.encodings.web\\9.0.10\\system.text.encodings.web.9.0.10.nupkg.sha512",
+    "C:\\Users\\jeanc\\.nuget\\packages\\system.text.json\\9.0.10\\system.text.json.9.0.10.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,3 @@
+08/11/2025 16:43:10: 
+08/11/2025 16:46:23: nombre=Jean&mensaje=Hola%20Servidor
+08/11/2025 17:03:21: Parámetros GET => nombre=Jean&curso=Redes (desde 127.0.0.1:65082)

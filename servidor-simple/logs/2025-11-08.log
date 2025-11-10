@@ -1,0 +1,55 @@
+﻿[18:44:44] 127.0.0.1:51331 POST /index.html -> data: nombre=Jean&apellido=bracho
+[18:53:19] 127.0.0.1:60974 GET /index.html
+[18:53:19] 127.0.0.1:60974 GET /index.html -> data: QUERY nombre=Jean
+[18:53:19] 127.0.0.1:60974 GET /index.html -> data: QUERY edad=25
+[18:54:34] 127.0.0.1:63304 POST /index.html
+[18:54:34] 127.0.0.1:63304 POST /index.html -> data: nombre=Jean2&apellido=bracho2
+[19:00:22] 127.0.0.1 GET /index.html
+[19:00:23] 127.0.0.1 GET /index.html
+[19:00:25] 127.0.0.1 GET /index.html
+[19:00:54] 127.0.0.1 GET /index.html
+[19:02:10] 127.0.0.1 GET /index.html
+[19:02:26] 127.0.0.1 GET /index.html
+[19:03:30] 127.0.0.1 GET /index.html
+[19:03:42] 127.0.0.1 GET /index.html
+[19:03:44] 127.0.0.1 GET /index.html
+[19:04:35] 127.0.0.1 GET /index.html
+[19:04:38] 127.0.0.1 GET /index.html
+[19:05:18] 127.0.0.1 GET /index.html
+[19:05:53] 127.0.0.1 GET /index.html
+[19:05:56] 127.0.0.1 GET /index.html
+[19:05:58] 127.0.0.1 GET /index.html
+[19:06:30] 127.0.0.1 GET /index.html
+[19:06:30] 127.0.0.1 GET /favicon.ico
+[19:06:38] 127.0.0.1 GET /index.html
+[19:06:54] 127.0.0.1 GET /no
+[19:08:19] 127.0.0.1 GET /index.html
+[19:08:54] 127.0.0.1 POST /index.html -> nombre=Jean3&apellido=bracho3
+[19:09:36] 127.0.0.1 GET /index.html
+[19:09:36] 127.0.0.1 GET /index.html -> QUERY nombre=Jean
+[19:09:36] 127.0.0.1 GET /index.html -> QUERY edad=2888
+[19:11:14] 127.0.0.1 GET /index.html
+[19:15:30] 127.0.0.1 GET /imagen.png
+[19:16:21] 127.0.0.1 GET /imagen.png
+[19:18:06] 127.0.0.1 GET /script.js
+[19:23:23] 127.0.0.1 GET /script.js
+[19:24:10] 127.0.0.1 GET /script.js
+[19:35:49] 127.0.0.1 GET /imagen.png
+[19:36:34] 127.0.0.1 GET /index.html
+[19:36:57] 127.0.0.1 GET /index.html
+[19:38:07] 127.0.0.1 GET /index.html
+[19:40:24] 127.0.0.1 GET /index.html
+[19:40:47] 127.0.0.1 GET /script.js
+[19:41:09] 127.0.0.1 GET /imagen.png
+[19:41:17] 127.0.0.1 GET /ima
+[19:47:33] 127.0.0.1 GET /index.html
+[19:47:39] 127.0.0.1 GET /index.html
+[19:47:45] 127.0.0.1 GET /imagen.png
+[19:48:05] 127.0.0.1 GET /script.js
+[19:50:57] 127.0.0.1 GET /script.js
+[19:50:59] 127.0.0.1 GET /script.js
+[19:53:15] 127.0.0.1 GET /script.js
+[19:53:17] 127.0.0.1 GET /index.html
+[19:53:26] 127.0.0.1 GET /index.html
+[19:53:31] 127.0.0.1 GET /imagen.png
+[19:54:05] 127.0.0.1 GET /script.js
