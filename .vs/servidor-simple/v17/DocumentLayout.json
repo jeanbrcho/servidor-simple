@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|c:\\users\\jeanc\\desktop\\uni\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\404.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|solutionrelative:servidor-simple\\wwwroot\\404.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|c:\\users\\jeanc\\desktop\\uni\\5to cuatri\\servidor-simple\\servidor-simple\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|solutionrelative:servidor-simple\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -17,10 +13,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|c:\\users\\jeanc\\desktop\\uni\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|solutionrelative:servidor-simple\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|c:\\users\\jeanc\\desktop\\uni\\5to cuatri\\servidor-simple\\servidor-simple\\servidor-simple.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{6A125661-642A-4378-9A9D-2C21D3B8E3EC}|servidor-simple\\servidor-simple.csproj|solutionrelative:servidor-simple\\servidor-simple.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,66 +22,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "404.html",
-              "DocumentMoniker": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\404.html",
-              "RelativeDocumentMoniker": "servidor-simple\\wwwroot\\404.html",
-              "ToolTip": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\404.html",
-              "RelativeToolTip": "servidor-simple\\wwwroot\\404.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-11-10T01:40:39.588Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\index.html",
               "RelativeDocumentMoniker": "servidor-simple\\wwwroot\\index.html",
               "ToolTip": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\wwwroot\\index.html",
               "RelativeToolTip": "servidor-simple\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-11-08T22:05:33.225Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "servidor-simple.csproj",
-              "DocumentMoniker": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\servidor-simple.csproj",
-              "RelativeDocumentMoniker": "servidor-simple\\servidor-simple.csproj",
-              "ToolTip": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\servidor-simple.csproj",
-              "RelativeToolTip": "servidor-simple\\servidor-simple.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-08T18:31:22.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\appsettings.json",
               "RelativeDocumentMoniker": "servidor-simple\\appsettings.json",
               "ToolTip": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\appsettings.json",
               "RelativeToolTip": "servidor-simple\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-11-08T18:30:04.891Z"
+              "WhenOpened": "2025-11-08T18:30:04.891Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\Program.cs",
               "RelativeDocumentMoniker": "servidor-simple\\Program.cs",
               "ToolTip": "C:\\Users\\jeanc\\Desktop\\UNi\\5to cuatri\\servidor-simple\\servidor-simple\\Program.cs",
               "RelativeToolTip": "servidor-simple\\Program.cs",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAWwLMAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAowP8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-08T18:17:53.331Z",
               "EditorCaption": ""

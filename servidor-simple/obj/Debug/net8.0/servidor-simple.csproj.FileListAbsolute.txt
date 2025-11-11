@@ -31,4 +31,10 @@ C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\
 C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\otraCarpeta\index.html
 C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\wwwroot\imagen.png
 C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\wwwroot\script.js
-C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\wwwroot\404.html
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\obj\Debug\net8.0\servidor-simple.sourcelink.json
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\wwwroot\styles.css
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\otraCarpeta\404.html
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\otraCarpeta\imagen.png
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\otraCarpeta\script.js
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\otraCarpeta\styles.css
+C:\Users\jeanc\Desktop\UNi\5to cuatri\servidor-simple\servidor-simple\bin\Debug\net8.0\wwwroot\40.html

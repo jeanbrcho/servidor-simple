@@ -18,7 +18,7 @@ class SimpleSocketHttpServer
             .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
             .Build();
 
-        //  Corrección: leer correctamente las claves Server:BaseDirectory y Server:Port
+        // lee las claves Server:BaseDirectory y Server:Port
         string rootDirConfig = config["Server:BaseDirectory"] ?? "wwwroot";
         if (!Path.IsPathRooted(rootDirConfig))
             rootDirConfig = Path.GetFullPath(Path.Combine(Directory.GetCurrentDirectory(), rootDirConfig));
@@ -29,15 +29,20 @@ class SimpleSocketHttpServer
         Directory.CreateDirectory(rootDirConfig);
         EnsureLogsFolderExists();
 
-        Console.WriteLine($"📂 Carpeta raíz (files): {rootDirConfig}");
-        Console.WriteLine($"🔌 Puerto: {port}");
+        Console.WriteLine($"Carpeta raíz (files): {rootDirConfig}");
+        Console.WriteLine($"Puerto: {port}");
 
+        //crea un socket TCP
         var listener = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
         listener.Bind(new IPEndPoint(IPAddress.Any, port));
         listener.Listen(200);
 
-        Console.WriteLine("🚀 Servidor iniciado. Esperando conexiones...");
+        Console.WriteLine("Servidor iniciado. Esperando conexiones...");
 
+        /* Este bucle nunca termina:
+        Cada vez que alguien (por ejemplo, un navegador) se conecta,
+        Crea una tarea paralela(Task.Run) para manejar esa conexión.
+        Esto permite manejar múltiples usuarios al mismo tiempo (concurrencia asíncrona)*/
         while (true)
         {
             Socket client = await listener.AcceptAsync();
@@ -55,10 +60,10 @@ class SimpleSocketHttpServer
             // Reader: leer líneas de texto (headers)
             using var reader = new StreamReader(networkStream, Encoding.UTF8, leaveOpen: true);
 
-            // 1) Leer request-line
+            //Leer request-line
             string requestLine = await reader.ReadLineAsync();
             if (string.IsNullOrEmpty(requestLine)) return;
-            Console.WriteLine($"\n➡ Solicitud: {requestLine} (desde {remoteIp})");
+            Console.WriteLine($"\n Solicitud: {requestLine} (desde {remoteIp})");
 
             var parts = requestLine.Split(' ');
             if (parts.Length < 2)
@@ -70,7 +75,7 @@ class SimpleSocketHttpServer
             string method = parts[0].ToUpperInvariant();
             string rawUrl = parts[1];
 
-            // 2) Leer headers en diccionario
+            //Leer headers en diccionario
             var headers = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
             string line;
             while (!string.IsNullOrEmpty(line = await reader.ReadLineAsync()))
@@ -84,12 +89,12 @@ class SimpleSocketHttpServer
                 }
             }
 
-            // 3) Detectar Content-Length y Accept-Encoding
+            //Detectar Content-Length y Accept-Encoding
             int contentLength = 0;
             if (headers.TryGetValue("Content-Length", out var cl) && int.TryParse(cl, out var clv)) contentLength = clv;
             bool acceptsGzip = headers.TryGetValue("Accept-Encoding", out var ae) && ae?.IndexOf("gzip", StringComparison.OrdinalIgnoreCase) >= 0;
 
-            // 4) Separar path y query string
+            //Separar path y query string
             string path = rawUrl;
             string queryString = "";
             int qpos = rawUrl.IndexOf('?');
@@ -98,9 +103,10 @@ class SimpleSocketHttpServer
                 path = rawUrl.Substring(0, qpos);
                 queryString = rawUrl.Substring(qpos + 1);
             }
+            // envia index si no se especifica archivo
             if (path == "/") path = "/index.html";
 
-            // 5) Evitar path traversal y mapear a archivo
+            // Evitar path traversal y mapear a archivo
             string requestedRelative = path.TrimStart('/').Replace('/', Path.DirectorySeparatorChar);
             string fullPath = Path.GetFullPath(Path.Combine(rootDirectory, requestedRelative));
             string rootFull = Path.GetFullPath(rootDirectory);
@@ -111,7 +117,7 @@ class SimpleSocketHttpServer
             }
 
 
-            // 6) Leer body si POST
+            // Leer body si POST
             string body = "";
             if (method == "POST" && contentLength > 0)
             {
@@ -126,10 +132,10 @@ class SimpleSocketHttpServer
                 body = new string(buffer, 0, readTotal);
             }
 
-            // 7) Loguear solicitud: siempre (IP, método, path)
+            // 9 Loguear solicitud: siempre (IP, método, path)
             LogRequest(remoteIp, method, path, string.IsNullOrWhiteSpace(body) ? null : body);
 
-            // 8) Loguear query params (si hay)
+            // Loguear query params (si hay)
             if (!string.IsNullOrEmpty(queryString))
             {
                 var pairs = queryString.Split('&', StringSplitOptions.RemoveEmptyEntries);
@@ -142,7 +148,7 @@ class SimpleSocketHttpServer
                 }
             }
 
-            // 9) Responder segun método
+            // Responder segun método
             if (method == "GET")
             {
                 await HandleGetAsync(networkStream, fullPath, acceptsGzip);
@@ -242,21 +248,10 @@ class SimpleSocketHttpServer
         <html>
             <head>
                 <title>404 - No encontrado</title>
-                <style>
-                    body {{
-                        font-family: Arial, sans-serif;
-                        background-color: #f5f5f5;
-                        color: #333;
-                        text-align: center;
-                        margin-top: 100px;
-                    }}
-                    h1 {{ font-size: 48px; color: #c00; }}
-                    p {{ font-size: 18px; }}
-                </style>
             </head>
             <body>
                 <h1>404 Not Found</h1>
-                <p>El recurso solicitado <b>{WebUtility.HtmlEncode(requestedPath)}</b> no fue encontrado en el servidor.</p>
+                <p>El recurso solicitado no fue encontrado en el servidor.</p>
             </body>
         </html>";
             byte[] b = Encoding.UTF8.GetBytes(html);
@@ -296,6 +291,7 @@ class SimpleSocketHttpServer
         {
             string execFolder = AppContext.BaseDirectory; // bin/Debug/netX.X/
             string projectRoot = Path.GetFullPath(Path.Combine(execFolder, "..", "..", "..")); // subir hasta carpeta del proyecto
+            //crea si no existe la carpeta
             string logsFolder = Path.Combine(projectRoot, "logs");
             Directory.CreateDirectory(logsFolder);
 
@@ -310,7 +306,7 @@ class SimpleSocketHttpServer
         }
         catch (Exception ex)
         {
-            Console.WriteLine($"⚠ Error escribiendo log: {ex.Message}");
+            Console.WriteLine($"Error escribiendo log: {ex.Message}");
         }
     }
 
